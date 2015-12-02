@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>Problem 03 - Match the widths</title>
+		<style>
+			/*
+				Comment:
+				Fix the layout! But skip down to line 56 where it says EDIT ME!
+			*/
+
+			* {
+			  text-align: center;
+			  box-sizing: border-box;
+			}
+
+			body {
+				font-family: "Helvetica Neue", Arial, san-serif;
+			}
+
+			.header h1 {
+			  text-align: center;
+			}
+
+			.bordered-heading {
+			   font-weight: 500;
+			   color: white;
+			   border: 1px solid white;
+			   padding-top: 50px;
+			   padding-bottom: 50px;
+			   margin: 0;
+			   border-radius: 6px;
+			}
+
+			.bordered-heading:hover {
+			   background: rgba(255,255,255,.2);
+			}
+
+			.group-01,
+			.group-02 {
+			  clear: both;
+			  padding: 20px;
+			}
+
+			.group-01 div,
+			.group-02 div {
+			  padding: 10px 10px;
+			}
+
+			.group-01 div {
+			  background: #F012BE;
+			}
+
+			.group-02 div {
+			  background: #B10DC9;
+			}
+
+			/* 
+			   EDIT ME: You can only change width and display properties below
+			   HINT: possible display properties include inline-block, block ( Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+			   HINT: widths can be in pixels or percentages ( Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/width )
+			 */
+
+
+			.group-01 div {
+			  width: 100px;
+			  display: inline-block;
+			}
+
+			.group-02 div {
+			  width: 100%;
+			  display: block;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+		  <h1>Make the div's have the width in the center!</h1>
+		  <p> You can only change width, and display!</p>
+		</div>
+
+		<div class="group-01">
+		  <div>
+		    <h1 class="bordered-heading">50%</h1>
+		  </div>
+		  <div>
+		    <h1 class="bordered-heading">50%</h1>
+		  </div>
+		</div>
+
+		<div class="group-02">
+		  <div>
+		    <h1 class="bordered-heading">25%</h1>
+		  </div>
+		  <div>
+		    <h1 class="bordered-heading">25%</h1>
+		  </div>
+		  <div>
+		    <h1 class="bordered-heading">25%</h1>
+		  </div>
+		  <div>
+		    <h1 class="bordered-heading">25%</h1>
+		  </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+
+<html>
+	<head>
+		<title>Problem 02 - Make the Circle Fly</title>
+		<style>
+			/*
+				Comment:
+				Make one of the circles move on the page!
+			*/
+
+			body {
+			  padding: 20px;
+			  font-family: "Helvetica Neue", Arial, san-serif;
+			}
+			
+			#flying-circle {
+			  -webkit-animation: fly 2s infinite ease;
+			  animation:         fly 2s infinite ease;
+			}
+			
+			@-webkit-keyframes fly {
+			  0%   { transform: translateX(0) }
+			  50% { transform: translateX(100vh) scale(.9,1); background: purple; }
+			  100% { transform: translateX(0) }
+			}
+
+			@keyframes fly {
+			  0%   { transform: translateX(0) }
+			  50% { transform: translateX(100vh) scale(.9,1); background: purple; }
+			  100% { transform: translateX(0) }
+			}
+			
+			.circle {
+			  width: 100px;
+			  height: 100px;
+			  background: orange;
+			  border-radius: 5em;
+			  margin-bottom: 20px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div>
+		  <h1>One of these circles should be flying!</h1>
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		  <div class="mover">
+		  	<div id="moving-circle" class="circle"></div>
+		  </div>
+		  <div class="circle"></div>
+		</div>
+	</body>
+</html>
